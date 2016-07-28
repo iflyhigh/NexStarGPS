@@ -353,8 +353,8 @@ void SoftwareSerial::setTX(uint8_t tx)
 void ross::setRX(uint8_t rx)
 {
 	pinMode(rx, INPUT);
-	if (!_inverse_logic)
-		digitalWrite(rx, HIGH);  // pullup for normal logic!
+//	if (!_inverse_logic)
+//		digitalWrite(rx, HIGH);  // pullup for normal logic!
 	_receivePin = rx;
 	_receiveBitMask = digitalPinToBitMask(rx);
 	uint8_t port = digitalPinToPort(rx);
