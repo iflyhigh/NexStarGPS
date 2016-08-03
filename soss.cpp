@@ -209,8 +209,8 @@ soss::~soss()
 
 void soss::setTX(uint8_t tx)
 {
-	pinMode(tx, OUTPUT);
 	digitalWrite(tx, HIGH);
+	pinMode(tx, OUTPUT);
 	_transmitBitMask = digitalPinToBitMask(tx);
 	uint8_t port = digitalPinToPort(tx);
 	_transmitPortRegister = portOutputRegister(port);

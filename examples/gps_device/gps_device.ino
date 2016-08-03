@@ -126,7 +126,7 @@ void loop()
 
 inline void pinModeTri(int pin)
 {
-	digitalWrite(pin, LOW);
-	pinMode(pin, OUTPUT);
+	//digitalWrite(pin, LOW);
+	//pinMode(pin, OUTPUT);
 	pinMode(pin, INPUT);
 }
